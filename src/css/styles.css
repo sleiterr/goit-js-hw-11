@@ -24,50 +24,18 @@
   -webkit-text-size-adjust: 100%;
 }
 
- body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    .search-form {
-      display: flex;
-      margin: auto;
-      padding: 20px;
-    }
-    .search-form label,
-    .search-form input,
-    .search-form button {
-      display: block;
-      /* width: 100%; */
-      margin-bottom: 10px;
-    }
-    .search-form input {
-      width: 272px;
-      border-radius: 4px;
-      padding: 10px;
-      border: 1px solid #808080;
-    }
-    .search-form button {
-      width: 91px; /* Встановлення ширини кнопки */
-      height: 40px; /* Встановлення висоти кнопки */
-      background-color: #007BFF;
-      color: white;
-      border: none;
-      border-radius: 8px; /* Заокруглення лівої і правої сторони */
-      cursor: pointer;
-    }
-    .search-form button:disabled {
-      background-color: #ccc;
-      cursor: not-allowed;
-    }
-    .results {
-      max-width: 800px;
-      margin: 20px auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-    .results img {
-      max-width: 200px;
-      height: auto;
-      border-radius: 8px;
-    }
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
